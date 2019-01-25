@@ -1,21 +1,21 @@
 body {
-	background-color: black;
+	background-color: skyblue;
 }
 
 .result {
 	width: 100px;
 	height: 200px;
 	line-height: 200px;
-	border: 1px solid white;
-	border-radius: 50%;
 	text-align: center;
-	background-color: white;
+	background-color: black;
+	display: none;
+	animation-duration: 80ms;
+	color: white;
 }
 
 .result span {
  display: inline-block;
- 
  vertical-align: middle;
- 
  line-height: normal;
 }
+
