@@ -10,7 +10,23 @@
 	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
-	<div class="fluid-container">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-sm-3 color-scheme-container">
+				<button id="cs1" class="color-scheme"></button>
+			</div>
+			<div class="col-sm-3 color-scheme-container">
+				<button id="cs2" class="color-scheme"></button>
+			</div>
+			<div class="col-sm-3 color-scheme-container">
+				<button id="cs3" class="color-scheme"></button>
+			</div>
+			<div class="col-sm-3 color-scheme-container">
+				<button id="cs4" class="color-scheme"></button>
+			</div>
+			
+		</div>
 		<h2>Hey there! Why don't you enter a number to see something cool</h1>
 
 			<input type="number" name="user-number" id="user-number" placeholder="Enter a number ...">
@@ -18,13 +34,13 @@
 			<div class="button-container">
 				<button type="button" class="btn btn-success" id="submit">Click Me!</button>
 				<div class="reset-container">
-					<div class="filter-container">
+					<!-- <div class="filter-container">
 						<h3>Filter:</h3>
 						<label>Beep <input type="checkbox" name="filter" value="Beep"></label>
 						<label>Boop <input type="checkbox" name="filter" value="Boop"></label>
 						<label>Blip <input type="checkbox" name="filter" value="Blip"></label>
 						<button type="button" class="btn btn-info" id="filter">Filter</button>
-					</div>
+					</div> -->
 					<button type="button" class="btn btn-danger" id="reset">Reset</button>
 				</div>
 			</div>

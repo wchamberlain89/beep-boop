@@ -4,6 +4,10 @@ body {
 	color: #F29F05;
 }
 
+h2 {
+	border-top: 5px solid #F29F05;
+}
+
 input {
 	width: 100%;
 	border: none;
@@ -25,6 +29,17 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+.color-scheme-container {
+	padding: 25px;
+}
+
+.color-scheme {
+	height: 125px;
+	width: 100%;
+	background-color: red;
+	border-radius: 50%;
 }
 
 .button-container {
@@ -53,4 +68,24 @@ input[type=number]::-webkit-outer-spin-button {
 
 .filter-container {
 	float: right;
+}
+
+#cs1 {
+	background-color: #00ADB5;
+}
+
+#cs2 {
+	background-color: #EA989F;
+}
+
+#cs3 {
+	background-color: #46518C;
+}
+
+#cs4 {
+	background-color: #FF0000;
+}
+
+*:focus {
+	outline: none; !important;
 }
