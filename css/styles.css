@@ -1,24 +1,24 @@
 body {
 	background-color: #0D1940;
 	text-align: center;
-	color: #F29F05;
+	color: #F2B705;
 }
 
 h2 {
-	border-top: 5px solid #F29F05;
+	border-top: 5px solid #F2B705;
 }
 
 input {
 	width: 100%;
 	border: none;
 	background-color: #0D1940;
-	border-bottom: 5px solid #F29F05;
+	border-bottom: 5px solid #F2B705;
 	text-align: center;
 	margin-bottom: 30px;
 	padding-bottom: 10px;
 	font-size: 30px;
 	font-weight: bold;
-	color: #F29F05;
+	color: #F2B705;
 }
 
 input:focus {
@@ -41,7 +41,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .color-scheme {
 	height: 125px;
-	width: 100%;
+	width: 125px;
 	background-color: red;
 	border-radius: 50%;
 }
@@ -83,11 +83,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #cs3 {
-	background-color: #46518C;
+	background-color: #FF0000;
 }
 
 #cs4 {
-	background-color: #FF0000;
+	background-color: #46518C;
 }
 
 .body-cs1 {
@@ -103,4 +103,49 @@ input[type=number]::-webkit-outer-spin-button {
 	background-color: #393E46;
 	border-color: #00ADB5;
 	color: #00ADB5;
+}
+
+.body-cs2 {
+	background-color: #735680;
+	color: #5B7CC3;
+}
+
+.h2-cs2 {
+	border-color: #5B7CC3;
+}
+
+.user-number-cs2 {
+	background-color: #735680;
+	border-color: #5B7CC3;
+	color: #5B7CC3;
+}
+
+.body-cs3 {
+	background-color: #FF3300;
+	color: #F0CC00;
+}
+
+.h2-cs3 {
+	border-color: #F0CC00;
+}
+
+.user-number-cs3 {
+	background-color: #FF3300;
+	border-color: #F0CC00;
+	color: #F0CC00;
+}
+
+.body-cs4 {
+	background-color: #46518C;
+	color: #D996A7;
+}
+
+.h2-cs4 {
+	border-color: #D996A7;
+}
+
+.user-number-cs4 {
+	background-color: #46518C;
+	border-color: #D996A7;
+	color: #D996A7;
 }

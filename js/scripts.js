@@ -114,17 +114,42 @@ $(function(){
 	});
 
 	$("#cs1").click(function(){
+		$("body").removeClass("body-cs2 body-cs3 body-cs4");
 		$("body").addClass("body-cs1");
+		$("h2").removeClass("h2-cs2 h2-cs3 h2-cs4");
 		$("h2").addClass("h2-cs1");
+		$("#user-number").removeClass("user-number-cs2 user-number-cs3 user-number-cs4");
 		$("#user-number").addClass("user-number-cs1");
 		currentHex = ['#393E46','#00ADB5','#FFF4E0','#F8B500','#FC3C3C'];
 	});
+
 	$("#cs2").click(function(){
-		$("body").removeClass("body-cs1 bodycs3 bodycs4");
+		$("body").removeClass("body-cs1 body-cs3 body-cs4");
 		$("body").addClass("body-cs2");
+		$("h2").removeClass("h2-cs1 h2-cs3 body-cs4");
 		$("h2").addClass("h2-cs2");
+		$("#user-number").removeClass("user-number-cs1 user-number-cs3 user-number-cs4");
 		$("#user-number").addClass("user-number-cs2");
-		currentHex = ['#393E46','#00ADB5','#FFF4E0','#F8B500','#FC3C3C'];
+		currentHex = ['#6483C2','#ABC093','#735680','#EA989F','#5B7CC3'];
 	});
 
+	$("#cs3").click(function(){
+		$("body").removeClass("body-cs1 body-cs2 body-cs4");
+		$("body").addClass("body-cs3");
+		$("h2").removeClass("h2-cs1 h2-cs2 body-cs4");
+		$("h2").addClass("h2-cs3");
+		$("#user-number").removeClass("user-number-cs1 user-number-cs2 user-number-cs4");
+		$("#user-number").addClass("user-number-cs3");
+		currentHex = ['#F0CC00','#FF9900','#FF6600','#FF3300','#FF0000'];
+	});
+
+	$("#cs4").click(function(){
+		$("body").removeClass("body-cs1 body-cs2 body-cs3");
+		$("body").addClass("body-cs4");
+		$("h2").removeClass("h2-cs1 h2-cs2 body-cs3");
+		$("h2").addClass("h2-cs4");
+		$("#user-number").removeClass("user-number-cs1 user-number-cs2 user-number-cs3");
+		$("#user-number").addClass("user-number-cs4");
+		currentHex = ['#D96C80','#D996A7','#F2B6C6','#46518C','#D0D3D9'];
+	});
 });
