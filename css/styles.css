@@ -25,6 +25,10 @@ input:focus {
 	outline: none;
 }
 
+button:focus {
+	outline: none;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -86,6 +90,17 @@ input[type=number]::-webkit-outer-spin-button {
 	background-color: #FF0000;
 }
 
-*:focus {
-	outline: none; !important;
+.body-cs1 {
+	background-color: #393E46;
+	color: #00ADB5;
+}
+
+.h2-cs1 {
+	border-color: #00ADB5;
+}
+
+.user-number-cs1 {
+	background-color: #393E46;
+	border-color: #00ADB5;
+	color: #00ADB5;
 }

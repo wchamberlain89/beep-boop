@@ -20,8 +20,8 @@ function beepBoop(numberString) {
 	return numberArray;
 }
 
-function displayNext(currentIndex, length) {
-	var hexArray = ['#0D1940','#F2B705','#D9C5A0', '#F29F05', '#8C4E03'];
+function displayNext(currentIndex, length, hexArray) {
+	
 	var randomColor = hexArray[Math.floor(Math.random() * hexArray.length)];
 
 	if(currentIndex < length) {
@@ -29,7 +29,7 @@ function displayNext(currentIndex, length) {
 		$("#" + currentIndex).addClass("animated fadeInUp").css("background-color", randomColor).show();
 		var currentDisplayResult = document.getElementById(currentIndex);
 		currentDisplayResult.addEventListener("animationend", function() {
-			displayNext(currentIndex + 1, length);
+			displayNext(currentIndex + 1, length, hexArray);
 		});
 
 	} else {
@@ -67,8 +67,12 @@ function restart() {
 
 
 $(function(){
+	var currentHex = ['#0D1940','#F2B705','#D9C5A0', '#F29F05', '#8C4E03'];
+	
+
 	$("button#submit").click(function(){
 
+		var displayHex = currentHex.slice();
 		var userNumber = $("#user-number").val();
 		
 		if(userNumber > 0) {
@@ -81,7 +85,7 @@ $(function(){
 			
 			$("#submit").hide();
 			
-			displayNext(0, results.length);
+			displayNext(0, results.length, displayHex);
 		}
 
 	});
@@ -107,6 +111,20 @@ $(function(){
 		filters.forEach(function(filter){
 			  $(".result:contains('" + filter + "')").show();
 		});
+	});
+
+	$("#cs1").click(function(){
+		$("body").addClass("body-cs1");
+		$("h2").addClass("h2-cs1");
+		$("#user-number").addClass("user-number-cs1");
+		currentHex = ['#393E46','#00ADB5','#FFF4E0','#F8B500','#FC3C3C'];
+	});
+	$("#cs2").click(function(){
+		$("body").removeClass("body-cs1 bodycs3 bodycs4");
+		$("body").addClass("body-cs2");
+		$("h2").addClass("h2-cs2");
+		$("#user-number").addClass("user-number-cs2");
+		currentHex = ['#393E46','#00ADB5','#FFF4E0','#F8B500','#FC3C3C'];
 	});
 
 });
