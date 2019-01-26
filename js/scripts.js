@@ -80,7 +80,7 @@ $(function(){
 			var results = beepBoop(userNumber);
 
 			results.forEach(function(result, index){
-				$(".result-container").append("<div class='result col-md-2' id='" + index + "'><span>" + result + "</span></div>");
+				$(".result-container").append("<div class='result col-md-1' id='" + index + "'><span>" + result + "</span></div>");
 			});
 			
 			$("#submit").hide();
