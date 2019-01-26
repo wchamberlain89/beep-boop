@@ -3,8 +3,11 @@ body {
 	text-align: center;
 	color: #F2B705;
 	font-family: roboto;
-	font-weight: bold;
 	height: 1200px;
+}
+
+h2 {
+	padding-top: 0px;
 }
 
 input {
@@ -15,13 +18,18 @@ input {
 	text-align: center;
 	margin-bottom: 30px;
 	padding-bottom: 10px;
-	font-size: 20px;
+	font-size: 45px;
 	font-weight: bold;
 	color: #F2B705;
 }
 
 input:focus {
 	outline: none;
+}
+
+button {
+	padding: 0;
+	border: none;
 }
 
 button:focus {
@@ -34,15 +42,18 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
+.container {
+	padding-top: 30px;
+}
+
 .color-scheme-container {
-	padding: 25px;
+	padding: 0;
 }
 
 .color-scheme {
-	height: 125px;
-	width: 125px;
+	height: 200px;
+	width: 100%;
 	background-color: red;
-	border-radius: 50%;
 }
 
 .button-container {
@@ -57,7 +68,8 @@ input[type=number]::-webkit-outer-spin-button {
 	display: none;
 	animation-duration: 70ms;
 	color: black;
-	font-size: 15px;
+	font-size: 20px;
+	font-weight: lighter;
 }
 
 .result span {
@@ -90,14 +102,19 @@ input[type=number]::-webkit-outer-spin-button {
 	background-color: #D96C80;
 }
 
+#cs5 {
+	background-color: #008C72;
+}
+
+#cs6 {
+	background-color: #CCC371;
+}
+
 .body-cs1 {
 	background-color: #393E46;
 	color: #00ADB5;
-}
-
-.h2-cs1 {
-	border-color: #00ADB5;
-}
+	font-family: righteous;
+	}
 
 .user-number-cs1 {
 	background-color: #393E46;
@@ -108,9 +125,8 @@ input[type=number]::-webkit-outer-spin-button {
 .body-cs2 {
 	background-color: #735680;
 	color: #5B7CC3;
+	font-family: "gloria hallelujah";
 }
-
-
 
 .user-number-cs2 {
 	background-color: #735680;
@@ -119,27 +135,50 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .body-cs3 {
-	background-color: #FF3300;
-	color: #F0CC00;
+	background-color: #8F1D2C;
+	color: #FF9900;
+	font-family: VT323;
 }
-
-
 
 .user-number-cs3 {
-	background-color: #FF3300;
-	border-color: #F0CC00;
-	color: #F0CC00;
+	background-color: #8F1D2C;
+	border-color: #FF9900;
+	color: #FF9900;
 }
+
 
 .body-cs4 {
 	background-color: #46518C;
-	color: #D996A7;
+	color: #D96C80;
+	font-family: "Fredoka One"
 }
-
-
 
 .user-number-cs4 {
 	background-color: #46518C;
-	border-color: #D996A7;
-	color: #D996A7;
+	border-color: #D96C80;
+	color: #D96C80;
+}
+
+.body-cs5 {
+	background-color: #005A5B;
+	color: #008C72;
+	font-family: "Fredericka the Great";
+}
+
+.user-number-cs5 {
+	background-color: #005A5B;
+	border-color: #008C72;
+	color: #008C72;
+}
+
+.body-cs6 {
+	background-color: #70ABB2;
+	color: #CCC371;
+	font-family: "Limelight"
+}
+
+.user-number-cs6 {
+	background-color: #70ABB2;
+	border-color: #CCC371;
+	color: #CCC371;
 }
