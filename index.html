@@ -10,14 +10,25 @@
 	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
-	<div class="container">
-		<h1>Hey there, why don't you enter a number to see something cool</h1>
-		<label>
-			your number goes here - 
-		<input type="number" name="user-number" id="user-number">
-		</label>
-		<button type="button" class="btn btn-success">Click Me!</button>
-		<div class="result-container row"></div>
-	</div>
-</body>
-</html>
+	<div class="fluid-container">
+		<h2>Hey there! Why don't you enter a number to see something cool</h1>
+
+			<input type="number" name="user-number" id="user-number" placeholder="Enter a number ...">
+
+			<div class="button-container">
+				<button type="button" class="btn btn-success" id="submit">Click Me!</button>
+				<div class="reset-container">
+					<div class="filter-container">
+						<h3>Filter:</h3>
+						<label>Beep <input type="checkbox" name="filter" value="Beep"></label>
+						<label>Boop <input type="checkbox" name="filter" value="Boop"></label>
+						<label>Blip <input type="checkbox" name="filter" value="Blip"></label>
+						<button type="button" class="btn btn-info" id="filter">Filter</button>
+					</div>
+					<button type="button" class="btn btn-danger" id="reset">Reset</button>
+				</div>
+			</div>
+			<div class="result-container row"></div>
+		</div>
+	</body>
+	</html>
